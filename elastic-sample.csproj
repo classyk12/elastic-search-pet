@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>elastic_sample</RootNamespace>
+    <UserSecretsId>9d0eaeaf-ec2c-41c1-bd98-d3c171071646</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="elastic-ingest\Properties\launchSettings.json" />
+    <Content Remove="elastic-ingest\appsettings.json" />
+    <Content Remove="elastic-ingest\appsettings.Development.json" />
+    <Content Remove="elastic-ingest\bin\Debug\netcoreapp3.1\elastic-ingest.runtimeconfig.dev.json" />
+    <Content Remove="elastic-ingest\bin\Debug\netcoreapp3.1\elastic-ingest.deps.json" />
+    <Content Remove="elastic-ingest\bin\Debug\netcoreapp3.1\appsettings.json" />
+    <Content Remove="elastic-ingest\bin\Debug\netcoreapp3.1\elastic-ingest.runtimeconfig.json" />
+    <Content Remove="elastic-ingest\bin\Debug\netcoreapp3.1\appsettings.Development.json" />
+    <Content Remove="elastic-ingest\obj\elastic-ingest.csproj.nuget.dgspec.json" />
+    <Content Remove="elastic-ingest\obj\project.assets.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NEST" Version="7.12.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+     <PackageReference Include="CsvHelper" Version="26.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="elastic-ingest\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Remove="elastic-ingest\StockWorker.cs" />
+    <Compile Remove="elastic-ingest\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.EventSource.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.UserSecrets.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.EventLog.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.CommandLine.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.EnvironmentVariables.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Nest.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\elastic-ingest.pdb" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\System.Diagnostics.EventLog.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Debug.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\elastic-ingest.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\Elasticsearch.Net.dll" />
+    <None Remove="elastic-ingest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll" />
+    <None Remove="elastic-ingest\obj\elastic-ingest.csproj.nuget.g.props" />
+    <None Remove="elastic-ingest\obj\project.nuget.cache" />
+    <None Remove="elastic-ingest\obj\elastic-ingest.csproj.nuget.g.targets" />
+    <None Remove="elastic-ingest\obj\Debug\netcoreapp3.1\elastic-ingest.assets.cache" />
+    <None Remove="elastic-ingest\obj\Debug\netcoreapp3.1\elastic-ingest.csproj.FileListAbsolute.txt" />
+    <None Remove="elastic-ingest\obj\Debug\netcoreapp3.1\elastic-ingest.genruntimeconfig.cache" />
+    <None Remove="elastic-ingest\obj\Debug\netcoreapp3.1\elastic-ingest.csproj.CopyComplete" />
+    <None Remove="elastic-ingest\obj\Debug\netcoreapp3.1\elastic-ingest.pdb" />
+    <None Remove="elastic-ingest\obj\Debug\netcoreapp3.1\elastic-ingest.csproj.CoreCompileInputs.cache" />
+    <None Remove="elastic-ingest\obj\Debug\netcoreapp3.1\elastic-ingest.dll" />
+    <None Remove="elastic-ingest\obj\Debug\netcoreapp3.1\elastic-ingest.csprojAssemblyReference.cache" />
+  </ItemGroup>
+</Project>
