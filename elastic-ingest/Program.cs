@@ -18,7 +18,7 @@ namespace elastic_ingest
                 .ConfigureServices((hostContext, services) =>
                 {
                     //services.AddHostedService<StockWorker>();
-                    services.AddHostedService<StockWorkerReIndex>();
+                    services.AddHostedService<StockWorker>();
                     //services.AddHostedService<IElasticIngestWorker>(); //register your worker service
                     //register elastic search
                     services.AddSingleton<IElasticClient>(e =>

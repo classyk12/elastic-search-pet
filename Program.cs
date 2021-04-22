@@ -20,6 +20,7 @@ namespace elastic_sample
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                  
                     webBuilder.UseStartup<Startup>();
                 });
     }
